@@ -75,6 +75,14 @@ button:hover {
     background-repeat: no-repeat;
 }
 
+.celular {
+    position: absolute;
+    top: 40%; 
+    left: 55%; 
+    transform: translate(-50%, -50%);
+    width: 200px; 
+    pointer-events: none; 
+}
 
 .textoin {
     position: absolute;
