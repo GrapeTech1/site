@@ -77,11 +77,12 @@ button:hover {
 
 .celular {
     position: absolute;
-    top: 40%; 
-    left: 55%; 
+    top: 10%; 
+    left: 45%; 
     transform: translate(-50%, -50%);
-    width: 200px; 
+    width: 65rem; 
     pointer-events: none; 
+    transform: rotate(30deg);
 }
 
 .textoin {
