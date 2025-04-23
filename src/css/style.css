@@ -106,3 +106,50 @@ button:hover {
     margin: 0.3rem ;
     font-family: Poppins;
   }
+
+  #sobrenos {
+    padding: 40px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+  }
+  
+  #sobrenos h2 {
+    color: #00e6ff; 
+    margin-bottom: 30px;
+    font-family: Poppins;
+    font-size: 3rem;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+ 
+  }
+  
+  .card {
+    margin-left: 2rem;
+    background-color: #10162F; 
+    height: 30rem;
+    width: 55rem;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .card2 {
+    left: 80%;
+    background-color: #007099; 
+    height: 30rem;
+    width: 53rem;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .card img{
+    width: 45rem;
+  }
+  
+  
+  
