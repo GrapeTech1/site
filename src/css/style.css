@@ -80,7 +80,7 @@ button:hover {
     top: 30%; 
     left: 71%; 
     transform: translate(-50%, -50%) rotate(30deg);
-    width: 50rem; 
+    width: 60rem; 
     pointer-events: none; 
 }
 
@@ -151,6 +151,9 @@ button:hover {
   
 #FAQ {
     background-image: url(/src/assets/faq.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 50px 0;
     color: white; /* deixa o texto branco pra garantir a leitura */
 }
