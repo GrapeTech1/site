@@ -70,17 +70,17 @@ button:hover {
     height: 100vh; 
     overflow: hidden;
     background-image: url('/src/assets/mao.png');
-     background-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .celular {
     position: absolute;
-    top: 30%; 
+    top: 37%; 
     left: 71%; 
     transform: translate(-50%, -50%) rotate(30deg);
-    width: 60rem; 
+    width: 70rem; 
     pointer-events: none; 
 }
 
@@ -159,7 +159,7 @@ button:hover {
 }
 
 
-#FAQ H2{
+#FAQ h2{
     text-align: center;
     font-size: 4rem;
     color: #469bba;
@@ -223,7 +223,62 @@ svg {
     transition: transform 0.5s ease;
 }
 
-/* opcional: mudar cor no hover */
+
 .faq:hover {
     background-color: #005f86;
+}
+
+#servicos {
+    background-color: #000a33;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#servicos h2 {
+    font-size: 2.5rem;
+    color: #00e6ff; 
+    font-family: Poppins;
+    margin-bottom: 0.5rem;
+}
+
+#servicos p {
+    color: white;
+    font-family: Poppins;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
+.cards-servicos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card-servico {
+    height: 250px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    box-shadow: 8px 8px 0px #7fb3e6; 
+}
+
+.card-servico2 {
+    height: 250px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    box-shadow: 8px 8px 0px #7fb3e6; 
+}
+
+
+.card-servico:nth-child(odd) {
+    background-color: #001DA7; 
+    box-shadow: 8px 8px 0px #ffffff; 
+}
+
+.card-servico2:nth-child(odd) {
+    background-color: #001DA7; 
+    box-shadow: 8px 8px 0px #6187CF; 
 }
