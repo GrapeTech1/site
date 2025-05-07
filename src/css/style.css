@@ -91,27 +91,61 @@ button:hover {
     pointer-events: none;
 }
 
+@media (max-width: 768px) {
+    .celular {
+        position: absolute;
+        top: 37%;
+        left: 71%;
+        transform: translate(-50%, -50%) rotate(30deg);
+        width: 40rem;
+        pointer-events: none;
+    }
+
+    .textoin {
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        transform: translateY(-50%);
+        color: white;
+        max-width: 90vw; 
+        padding: 1rem;
+    }
+    
+    .textoin h1 {
+        font-size: clamp(2.5rem, 8vw, 7rem); 
+        font-weight: bold;
+        margin: 0.5rem 0;
+        font-family: 'Nico Moji';
+    }
+    
+    .textoin h5 {
+        font-size: clamp(1rem, 4vw, 2rem); 
+        font-family: Poppins;
+    }
+}
+
 .textoin {
     position: absolute;
     top: 40%;
     left: 5%;
     transform: translateY(-50%);
     color: white;
-    max-width: 400px;
+    max-width: 90vw; 
+    padding: 1rem;
 }
 
 .textoin h1 {
-    font-size: 7rem;
+    font-size: clamp(2.5rem, 8vw, 7rem); 
     font-weight: bold;
     margin: 0.5rem 0;
-    font-family: 'Nico Moji';
+    font-family: 'Nico Moji', sans-serif;
 }
 
 .textoin h5 {
-    font-size: 2rem;
-    margin: 0.3rem;
-    font-family: Poppins;
+    font-size: clamp(1rem, 4vw, 2rem); 
+    font-family: Poppins, sans-serif;
 }
+
 
 /* FIM DO INICIO/BANNER */
 
