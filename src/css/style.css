@@ -95,7 +95,35 @@ button {
 button:hover {
     background-color: #00E5FF;
     border: 2px solid #ffffff;
-    color: #fff;
+    color: pointer;
+}
+
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+}
+
+@media (max-widht: 750px){
+    .hamburguer{
+        display: block;
+
+        .nav li {
+            position: fixed;
+        }
+    }
 }
 
 /* FIM DA NAV DO SITE */
