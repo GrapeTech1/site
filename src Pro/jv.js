@@ -1,11 +1,3 @@
-const faqs = document.querySelectorAll(".faq");
-
-faqs.forEach(faq => {
-    faq.addEventListener("click", () => {
-        faq.classList.toggle("active");
-    });
-});
-
 window.addEventListener('scroll', function() {
     let scroll = document.querySelector('.scrolltop')
     scroll.classList.toggle('active', window.scrollY > 450)

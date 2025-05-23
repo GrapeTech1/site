@@ -11,7 +11,43 @@
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url(https://fonts.googleapis.com/earlyaccess/nicomoji.css);
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { margin: 0;
+      padding: 0;
+       box-sizing: border-box; 
+    }
+
+          
+      .scrolltop {
+          z-index: 10;
+          outline: none;
+          border: 0;
+          background-color:  #0076A8;
+          width: 60px;
+          height: 60px;
+          padding: 8px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: fixed;
+          right: 30px;
+          bottom: 30px;
+          cursor: pointer;
+          opacity: 0;
+          visibility: hidden;
+          transition: all;
+      }
+
+      .scrolltop.active {
+          opacity: 1;
+          visibility: visible;
+      }
+
+      .scrolltop img{
+          width: 100%;
+          transform: rotate(0deg);
+      }
+
     html { scroll-behavior: smooth; }
 
         body {
@@ -227,6 +263,11 @@
   </style>
 </head>
 <body>
+     <div class="bota">
+        <button class="scrolltop">
+            <img src="./src/assets/setaa.png" onclick="backTop()"/>
+        </button>
+   </div>
 <header>
  <img class="logo" src="/src Pro/GRAPETECH.png">
     <nav>
@@ -288,6 +329,6 @@
       <p>grapetech@email.com</p>
     </div>
   </footer>
-
+ <script src="./src Pro/jv.js"></script>
 </body>
 </html>
