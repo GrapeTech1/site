@@ -30,8 +30,7 @@ body {
 .logo {
     cursor: pointer;
     width: 20%;
-    min-width: 100px;
-    height: auto;
+
 }
 
 li, a, button {
