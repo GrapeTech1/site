@@ -126,6 +126,59 @@
       padding: 20px;
       border-radius: 10px;
       animation: fadeIn 2s ease-in-out;
+      color: white;
+    }
+
+    .texto-banner h2 {
+      font-family: 'Madimi One', sans-serif;
+      font-size: 48px;
+    }
+
+    .texto-banner p {
+      font-family: 'Madimi One', sans-serif;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    
+    @media (max-width: 768px) {
+      .sites-exemplos{ 
+        display: flex;
+       flex-wrap: wrap;
+       grid-template-columns: repeat(1, 1fr);
+      }
+      .texto-banner {
+        max-width: 90%;
+        padding: 16px;
+      }
+
+      .texto-banner h2 {
+        font-size: 36px;
+      }
+
+      .texto-banner p {
+        font-size: 18px;
+      }
+
+      .produtos {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .texto-banner {
+        max-width: 95%;
+        padding: 12px;
+      }
+
+      .texto-banner h2 {
+        font-size: 28px;
+      }
+
+      .texto-banner p {
+        font-size: 16px;
+      }
+      
     }
 
     @keyframes fadeIn {
@@ -163,18 +216,18 @@
     }
 
     .sites-exemplos {
-      height: 100vh;
       background-color: #000e3a;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 40px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px ;
+      column-gap: 0;
       padding: 60px 40px;
       justify-items: center;
     }
 
     .site {
-      width: 200px;
-      height: 200px;
+      width: 25rem;
+      height: 16rem;
       background-color: #6fa8dc;
       display: flex;
       justify-content: center;
@@ -249,15 +302,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poetsen+One&display=swap');
 
-  .texto-banner h2 {
-    font-family: 'Madimi One', sans-serif;
-    font-size: 48px;
-  }
 
-  .texto-banner p {
-    font-family: 'Madimi One', sans-serif;
-    font-size: 20px;
-  }
 </style>
 
   </style>
