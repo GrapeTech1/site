@@ -22,7 +22,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
+    
 }
 
 
@@ -32,6 +33,7 @@ body {
     width: 20%;
 
 }
+/* -------------------NAV DO SITE-------------- */
 li,
 a,
 button {
@@ -93,8 +95,8 @@ header {
     border: 2px solid #ffffff;
     color: #fff;
 }
-
-
+/* ------------------FIM DA NAV DO SITE-------------- */
+/* ---------------COMEÇO MENU-HAMBURGUER------------- */
 .hamburguer {
     position: fixed; 
     top: 1.5rem;
@@ -195,49 +197,78 @@ header {
             top: -7px;
         }
 
+    }
+
+/* ---------------FIM DO MENU-HAMBURGUER------------- */
+
+/* ------------------COMEÇO DO FORMS----------------- */
+.form-container {
+  max-width: 500px; 
+  padding: 40px;
+  background-color: #001251; /* azul escuro */
+  color: white;
+  text-align: center;
+  border: 5px solid;
+  border-image: linear-gradient(to bottom, #6e1ddf, #00d4ff); /* roxo para azul */
+  border-image-slice: 1;
+  border-radius: 20px;
+  margin: auto;
+
+
 }
 
-
-form {
-    font-size: clamp(1rem, 3vw, 2rem);
-    overflow-wrap: break-word;
-    width: 40%;
-    min-width: 450px;
-    margin: auto;
-    text-align: center;
+#btnComecar {
+    background-color: #5b07a9;
     color: white;
-    background-color: #01104f;
-    padding: 50px;
-    border: double 2px transparent;
-    border-image: linear-gradient(to top right, #04ffff, #4d009b)3;
-    border-style: solid;
-    border-width: 5px;
-    margin-top: 70px;
-    box-shadow: 3px 3px 5px black;
-}
-
-#btnComecar
-{
-    font-size: clamp(1rem, 3vw, 2rem);
-    color: white;
-    background-color: #4a0b9f;
-    padding: 10px;
-    font-family: Poppins;
-    border: 4px solid #4a0b9f;
-    border-radius: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
     cursor: pointer;
-    transition: all 0.3s;
+    margin-top: 20px;
+    box-shadow: 0px 2px #000000;
 }
 
-#btnComecar:hover
-{
-    background-color: #370875;
-    border-radius: 10px;
-    border-color: #370875;
+#btnComecar:hover {
+    transition: 0.1s;
+    background-color: #3a0e5b;
 }
 
+.perguntas {
+    display: none;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.perguntas label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.perguntas input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+#btnEnviar {
+    background-color: #5b07a9;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0px 2px #000000;
+}
+
+#btnEnviar:hover {
+    transition: 0.1s;
+    background-color: #19062b;
+}
 .footer {
     font-family: Poppins;
     display: flex;

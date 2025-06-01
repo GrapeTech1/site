@@ -1,5 +1,9 @@
-const hamburger = document.querySelector(".hamburguer");
-const nav = document.querySelector(".nav");
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("btnComecar");
+    const perguntas = document.getElementById("perguntas");
 
-hamburger.addEventListener("click", () => 
-nav.classList.toggle("active"));
+    btn.addEventListener("click", function () {
+        perguntas.style.display = "block";
+        btn.style.display = "none"; // Oculta botão após clique
+    });
+});

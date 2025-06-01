@@ -18,17 +18,32 @@
             <li><a href="projetos.html">Projetos</a></li>
             </ul>
         </nav>
-            <a class="contato" href="Contato.html">Entre em Contato</a>
+            <a class="botao" href="Contato.html">Entre em Contato</a>
         <button class="hamburguer"></button>
         </header>
 
         <!--formulario-->
-        <form>
-            <h2>Gostaríamos de conhecer um pouco mais sobre o seu negócio!</h2>
-            <input type="button" value="começar" id="btnComecar">
-        </form>
-    </div>
+        <!--formulario-->
+<form action="https://formsubmit.co/mariagferreira2312@gmail.com" method="POST" class="form-container">
+    <h2>Gostaríamos de conhecer um pouco mais sobre o seu negócio!</h2>
 
+    <input type="button" value="começar" id="btnComecar">
+
+    <div id="perguntas" class="perguntas">
+        <label for="nome">Qual é o nome do seu negócio?</label>
+        <input type="text" id="nome">
+
+        <label for="segmento">Qual é o segmento?</label>
+        <input type="text" id="segmento">
+
+        <label for="objetivo">Qual é o seu principal objetivo?</label>
+        <input type="text" id="objetivo">
+          <input type="submit" value="Enviar" id="btnEnviar">
+    </div>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" src="./Contato.html">
+</form>
+    </div>
     <footer class="footer">
         <div class="esquerfooter">
             <p>Impulsionando o futuro <br>
@@ -48,4 +63,5 @@
         </div>
     </footer>
 </body>
+<script src="./srcContato/javascript/script.js"></script>
 </html>
