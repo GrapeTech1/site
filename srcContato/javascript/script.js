@@ -1,10 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const btn = document.getElementById("btnComecar");
+    const btnComecar = document.getElementById("btnComecar");
+    const btnVoltar = document.getElementById("btnVoltar");
     const perguntas = document.getElementById("perguntas");
 
-    btn.addEventListener("click", function () {
-        perguntas.style.display = "block";
-        btn.style.display = "none"; // Oculta botão após clique
+    btnComecar.addEventListener("click", function () {
+        perguntas.style.display = "block"; // mostra perguntas
+        btnComecar.style.display = "none"; // esconde botão começar
+        btnVoltar.style.display = "inline-block"; // mostra botão voltar
+    });
 
+    btnVoltar.addEventListener("click", function () {
+        perguntas.style.display = "none"; // esconde perguntas
+        btnComecar.style.display = "inline-block"; // mostra botão começar
+        btnVoltar.style.display = "none"; // esconde botão voltar novamente
     });
 });
