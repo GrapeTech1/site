@@ -251,51 +251,6 @@
       line-height: 1.4;
     }
 
-    
-    @media (max-width: 768px) {
-      .sites-exemplos{ 
-        display: flex;
-       flex-wrap: wrap;
-       grid-template-columns: repeat(1, 1fr);
-      }
-      .texto-banner {
-        max-width: 90%;
-        padding: 16px;
-      }
-
-      .texto-banner h2 {
-        font-size: 36px;
-      }
-
-      .texto-banner p {
-        font-size: 18px;
-      }
-
-      .produtos {
-        flex-wrap: wrap;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .texto-banner {
-        max-width: 95%;
-        padding: 12px;
-      }
-
-      .texto-banner h2 {
-        font-size: 28px;
-      }
-
-      .texto-banner p {
-        font-size: 16px;
-      }
-      
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
    
     .produtos {
       height: 80vh;
@@ -410,6 +365,52 @@
   }
   
 
+    
+    @media (max-width: 768px) {
+ 
+      .texto-banner {
+        max-width: 90%;
+        padding: 16px;
+      }
+
+      .texto-banner h2 {
+        font-size: 36px;
+      }
+
+      .texto-banner p {
+        font-size: 18px;
+      }
+
+      .produtos {
+        flex-wrap: wrap;
+      }
+
+      .sites-exemplos {
+        grid-template-columns: 1fr !important;;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .texto-banner {
+        max-width: 95%;
+        padding: 12px;
+      }
+
+      .texto-banner h2 {
+        font-size: 28px;
+      }
+
+      .texto-banner p {
+        font-size: 16px;
+      }
+      
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
   @import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Poetsen+One&display=swap');
 
@@ -462,10 +463,10 @@
   </section>
 
   <section class="sites-exemplos">
-    <div class="site" href="https://maduomg.github.io/PET/"  target="_blank" >site</div>
-    <div class="site">site</div>
-    <div class="site">site</div>
-    <div class="site">site</div>
+      <a class="site" href="https://maduomg.github.io/PET/" target="_blank">site</a>
+      <a class="site" href="#">site</a>
+      <a class="site" href="#">site</a>
+      <a class="site" href="#">site</a>
   </section>
 
   <footer class="footer">
