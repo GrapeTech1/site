@@ -219,7 +219,6 @@ header {
 
 #btnVoltar {
     margin-bottom: 2rem;
-    display: flex;
     background-color: #5b07a9;
     color: white;
     padding: 10px 25px;

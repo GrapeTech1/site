@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     btnComecar.addEventListener("click", function () {
         perguntas.style.display = "block"; // mostra perguntas
         btnComecar.style.display = "none"; // esconde botão começar
-        btnVoltar.style.display = "inline-block"; // mostra botão voltar
+        btnVoltar.style.display = "flex"; // mostra botão voltar
     });
 
     btnVoltar.addEventListener("click", function () {
