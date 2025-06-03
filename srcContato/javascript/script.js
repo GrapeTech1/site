@@ -5,5 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     btn.addEventListener("click", function () {
         perguntas.style.display = "block";
         btn.style.display = "none"; // Oculta botão após clique
+
     });
 });
