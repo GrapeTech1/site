@@ -56,59 +56,170 @@
           color: white;
         }
 
-        li,
-    a,
-    button {
-        font-family: Poppins;
-        font-weight: 500;
-        font-size: 1rem;
-        color: #00E5FF;
-        text-decoration: none;
+    li,
+      a,
+      button {
+          font-family: Poppins;
+          font-weight: 500;
+          font-size: 1rem;
+          color: #00E5FF;
+          text-decoration: none;
+      }
+
+      header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1.25rem 5%;
+      }
+
+      .logo {
+          cursor: pointer;
+          width: 18rem;
+      }
+
+      .nav {
+          list-style: none;
+          position: relative;
+      }
+
+      .nav-list li {
+          display: inline-block;
+          padding: 0px 1.25rem;
+      }
+
+      .nav-list li a {
+          transition: all 0.3s ease 0s;
+      }
+
+      .nav-list li a:hover {
+          color: #3168b0;
+      }
+
+      .botao {
+          display: inline-block;
+          font-family: Poppins;
+          font-weight: 500;
+          font-size: 1rem;
+          color: #00E5FF;
+          text-decoration: none;
+          padding: 5px 20px;
+          background-color: #000;
+          border: 2px solid #00E5FF;
+          border-radius: 20px;
+          cursor: pointer;
+          transition: all 0.3s ease 0s;
+      }
+
+      .botao:hover {
+          background-color: #00E5FF;
+          border: 2px solid #ffffff;
+          color: #fff;
+      }
+
+      
+.hamburguer {
+    position: fixed; 
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 2000;
+    display: none; 
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.hamburguer::before,
+.hamburguer::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+
+@media (max-width:750px ) {
+    .logo{
+        width: 15rem;
     }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.25rem 5%;
+
+    .botao {
+    margin-right: 3rem;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 35px;
     }
 
-    .logo {
-        cursor: pointer;
-        width: 18rem;
+    .hamburguer {
+        display: block;
+        z-index: 10000;
     }
+    .nav-list {
+             display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000000;
+            clip-path: circle(100px at 90% -15%);
+            transition: 1s ease-out;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center; 
+            gap: 0;
+            pointer-events: none;
+             z-index: 1000;
+        }
 
-    nav {
-        list-style: none;
-    }
+        .nav-list a {
+            font-size: 24px;
+            opacity: 0;
+         }
 
-    nav li {
-        display: inline-block;
-        padding: 0px 1.25rem;
-    }
+         .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+        }
+        .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+        }
+        .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+        }
 
-    nav li a {
-        transition: all 0.3s ease 0s;
-    }
+        .nav.active .nav-list {
+            clip-path: circle(1500px at 90% -15%);
+            pointer-events: all;
+        }
+        .nav.active .nav-list a {
+            opacity: 1;
+        }
 
-    nav li a:hover {
-        color: #3168b0;
-    }
+        .nav.active .hamburguer {
+           position: fixed;
+           top: 26px;
+           right: 16px;
+           border-top-color: transparent;
+        }
 
-    button {
-        padding: 5px 20px;
-        background-color: #000;
-        border: 2px solid #00E5FF;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-    }
+        .nav.active .hamburguer::before {
+            transform: rotate(135deg);
+        }
 
-    button:hover {
-        background-color: #00E5FF;
-        border: 2px solid #ffffff;
-        color: #fff;
-    }
+        .nav.active .hamburguer::after {
+            transform: rotate(-135deg);
+            top: -7px;
+        }
+
+}
+
 
 
     .banner {
@@ -315,15 +426,16 @@
    </div>
 <header>
  <img class="logo" src="/src Pro/GRAPETECH.png">
-    <nav>
-      <ul class="nav">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="index.html">Sobre Nós</a></li>
-        <li><a href="index.html">Serviços</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-      </ul>
-    </nav>
-    <a class="botao" href="/Contato.html"><button>Entre em Contato</button></a>
+   <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobrenos">Sobre Nós</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+    </ul>
+  </nav>
+    <a class="botao" href="Contato.html">Entre em Contato</a>
+  <button class="hamburguer"></button>
   </header>
   <!-- INICIO-->
   <section class="banner">
@@ -350,7 +462,7 @@
   </section>
 
   <section class="sites-exemplos">
-    <div class="site" href="https://maduomg.github.io/PET/">site</div>
+    <div class="site" href="https://maduomg.github.io/PET/"  target="_blank" >site</div>
     <div class="site">site</div>
     <div class="site">site</div>
     <div class="site">site</div>
