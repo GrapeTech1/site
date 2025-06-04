@@ -294,20 +294,108 @@
     .site {
       width: 25rem;
       height: 16rem;
-      background-color: #6fa8dc;
+      background: linear-gradient(#f7c700, #a0dee6);
       display: flex;
       justify-content: center;
       align-items: center;
       font-weight: bold;
       font-size: 20px;
-      box-shadow: 5px 5px #002060;
+      box-shadow: 5px 5px #16534b;
       border-radius: 10px;
       transition: transform 0.3s ease, background-color 0.3s;
     }
 
+     .site1 {
+      width: 25rem;
+      height: 16rem;
+      background: linear-gradient(#04252b, #faf1c3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      box-shadow: 5px 5px #0e4163;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s;
+    }
+
+     .site2 {
+      width: 25rem;
+      height: 16rem;
+       background: linear-gradient(#ffe45b, #faf1c3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      box-shadow: 5px 5px #b98a23;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s;
+    }
+
+     .site3 {
+      width: 25rem;
+      height: 16rem;
+      background: linear-gradient(#eb97e9, #aa7dcf);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      box-shadow: 5px 5px #674186;
+      border-radius: 10px;
+      transition: transform 0.3s ease, background-color 0.3s;
+    }
+
+
     .site:hover {
-      background-color: #4a90e2;
       transform: scale(1.1);
+      box-shadow:  0 10px 25px rgba(250, 241, 195, 0.5);
+    }
+
+    .site1:hover{
+      transform: scale(1.1);
+      box-shadow:  0 10px 25px rgba(133, 255, 235, 0.5);
+    }
+
+    .site2:hover {
+      transform: scale(1.1);
+      box-shadow:  0 10px 25px rgba(253, 228, 6, 0.5);
+    }
+    .site3:hover {
+      transform: scale(1.1);
+      box-shadow:  0 10px 25px rgba(182, 73, 245, 0.5);
+    }
+
+    .site, .site1, .site2, .site3 img {
+        object-fit: cover;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .img1 {
+      width: 17rem;
+      height: 17rem;
+    }
+
+    .img2 {
+     width: 16rem;
+      height: 16rem;
+    }
+    .img3 {
+         width: 16rem;
+      height: 16rem;
+    }
+    .img4 {
+         width: 16rem;
+      height: 16rem;
+    }
+    .img1:hover,
+    .img2:hover,
+    .img3:hover,
+    .img4:hover img {
+        transform: scale(1.1) rotate(5deg);
     }
 
    .footer {
@@ -441,7 +529,7 @@
   <!-- INICIO-->
   <section class="banner">
   <div class="texto-banner">
-      <h2>PRODUTOS</h2>
+      <h2>Projetos</h2>
       <p>A GRAPETECH é uma empresa que ajuda negócios a crescerem com soluções de tecnologia.</p>
       <br>
       <p>Oferecemos suporte em desenvolvimento de sistemas, sites, apps e transformação digital.</p>
@@ -464,11 +552,17 @@
 
   <section class="sites-exemplos">
       <a class="site" href="https://maduomg.github.io/PET/" target="_blank">
-        <img href="./src/assets/1.png">
-        site</a>
-      <a class="site" href="https://maduomg.github.io/signos/">site</a>
-      <a class="site" href="https://maduomg.github.io/relogio/">site</a>
-      <a class="site" href="#">site</a>
+        <img class="img1" src="./src/assets/1.png" alt="Imagem 1">
+        </a>
+      <a class="site1" href="https://maduomg.github.io/signos/">
+        <img class="img2" src="./src/assets/2.png" alt="Imagem 2">
+        </a>
+      <a class="site2" href="https://maduomg.github.io/relogio/">
+        <img class="img3" src="./src/assets/3.png" alt="Imagem 3">
+        </a>
+      <a class="site3" href="https://unic0rna-github-io.vercel.app/">
+        <img class="img4"  src="./src/assets/4.png" alt="Imagem 4">
+        </a>
   </section>
 
   <footer class="footer">
