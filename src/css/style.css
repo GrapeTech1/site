@@ -242,7 +242,7 @@ header {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url('/src/assets/mao.png');
+    background-image: url('../assets/mao.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -356,7 +356,7 @@ header {
 /* COMEÇO DO FAQ */
 #FAQ {
 
-    background-image: url(/src/assets/faq.png);
+    background-image: url(../assets/faq.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
