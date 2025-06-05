@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="./srcContato/css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="main-content"></div>
+
   <header>
  <img class="logo" src="./src/assets/GRAPETECH.png">
         <nav class="nav">
@@ -19,13 +20,12 @@
             </ul>
         </nav>
             <a class="botao" href="Contato.html">Entre em Contato</a>
-        <button class="hamburguer"></button>
-        </header>
+    <button class="hamburguer"></button>
+</header>
 
         <!--formulario-->
         <!--formulario-->
-<form action="https://formsubmit.co/mariagferreira2312@gmail.com" method="POST" class="form-container">
-    
+    <form id="meuFormulario" action="https://formsubmit.co/mariagferreira2312@email.com" class="form-container" method="POST">
     <input type="button" value="voltar" id="btnVoltar">
     <h2>Gostaríamos de conhecer um pouco mais sobre o seu negócio!</h2>
 
@@ -33,14 +33,18 @@
 
     <div id="perguntas" class="perguntas">
         <label for="nome">Qual é o nome do seu negócio?</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome" required>
 
         <label for="segmento">Qual é o segmento?</label>
-        <input type="text" id="segmento">
+        <input type="text" id="segmento" required>
 
         <label for="objetivo">Qual é o seu principal objetivo?</label>
-        <input type="text" id="objetivo">
-          <input type="submit" value="Enviar" id="btnEnviar">
+        <input type="text" id="objetivo" required>
+
+        <label for="email">Fale seu email:</label>
+        <input type="email" nome="e-mail" required>
+
+        <input type="submit" value="Enviar" id="btnEnviar">
     </div>
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" src="./Contato.html">
@@ -66,4 +70,7 @@
     </footer>
 </body>
 <script src="./srcContato/javascript/script.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.22.0/dist/sweetalert2.all.min.js
+"></script>
 </html>

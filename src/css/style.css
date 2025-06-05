@@ -137,6 +137,9 @@ header {
         width: 15rem;
     }
 
+    .celular {
+        display: none;
+    }
 
     .botao {
     margin-right: 3rem;
@@ -206,6 +209,17 @@ header {
             top: -7px;
         }
 
+        .cards-servicos {
+            width: 20rem;
+            grid-template-columns: 1fr !important;;
+            gap: 30px;
+        }
+
+        .faq {
+             padding: 0 1rem;
+        }
+
+
 }
 
 
@@ -244,19 +258,7 @@ header {
     pointer-events: none;
 }
 
-@media (max-width: 768px) {
 
-    .celular {
-        position: absolute;
-        top: 37%;
-        left: 90%;
-        transform: translate(-50%, -50%) rotate(30deg);
-        width: 40rem;
-        pointer-events: none;
-    }
-    
-
-}
 
 .textoin {
     position: absolute;

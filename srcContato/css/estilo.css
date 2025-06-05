@@ -97,6 +97,8 @@ header {
 }
 /* ------------------FIM DA NAV DO SITE-------------- */
 /* ---------------COMEÇO MENU-HAMBURGUER------------- */
+
+
 .hamburguer {
     position: fixed; 
     top: 1.5rem;
@@ -121,13 +123,10 @@ header {
     transition: 0.3s;
 }
 
-
-
 @media (max-width:750px ) {
     .logo{
         width: 15rem;
     }
-
 
     .botao {
     margin-right: 3rem;
@@ -197,7 +196,7 @@ header {
             top: -7px;
         }
 
-    }
+}
 
 /* ---------------FIM DO MENU-HAMBURGUER------------- */
 
@@ -218,6 +217,7 @@ header {
 }
 
 #btnVoltar {
+    display: none;
     margin-bottom: 2rem;
     background-color: #5b07a9;
     color: white;
@@ -271,6 +271,14 @@ header {
     border: none;
     border-radius: 5px;
 }
+
+.perguntas input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
 #btnEnviar {
     background-color: #5b07a9;
     color: white;
@@ -318,6 +326,10 @@ header {
     border: 2px solid #fff;
   }
   
+  .icons img:hover {
+     transform: scale(1.05);
+  }
+  
   .contafooter h3 {
     margin-bottom: 10px;
   }
@@ -350,9 +362,3 @@ h1, h2, h3, h4 {
     cursor: default;
 }
 
-@media (max-width: 650px)
-{
-    li, header button {
-        visibility: hidden;
-    }
-}
